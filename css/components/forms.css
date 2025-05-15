@@ -1,0 +1,29 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 6%;
+}
+
+.form .form-row {
+    font-size: 2em;
+    width: 80%;
+    margin-top: 4vh;
+}
+
+.form input {
+    font-size: 0.5em;
+    width: 122%;
+    height: 4vh;
+    border: none;
+    border-bottom: 2px solid rgb(231, 225, 225)
+
+}
+
+.form button{
+    width: 52%;
+    height: 4.5vh;
+    margin-top: 4vh;
+    background-color: rgb(67, 99, 67);
+    color: white;
+}
+

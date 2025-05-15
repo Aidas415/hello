@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello there</title>
 
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./site.webmanifest" />
+
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/components/forms.css">
@@ -21,26 +28,26 @@
                 </div>      
                 <h1 class="hello">Hello there.</h1>
                 <p class="provision">You need an account to continue.</p>
-                <form action="#">
+                <form class="form" action="#">
                     <div class="form-row">
-                        <label for="Full-name">Full name</label>
-                        <input id="Full-name" type="text">
+                        <input id="Full-name" type="text" placeholder="Full Name" maxlength="25">
                     </div>
                     <div class="form-row">
-                        <label for="email">Email</label>
-                        <input id="email" type="text">
+                        <input id="email" type="text" placeholder="Email" required>
                     </div>
                     <div class="form-row">
-                        <label for="Password">Password</label>
-                        <input id="Password" type="text">
+                        <input id="Password" type="text" placeholder="Password" required title="min 8 simboliai, tarp kurių bent 2 skaičiai">
                     </div>
                     <div class="form-row">
-                        <label for="Password">Repeat Password</label>
-                        <input id="Password" type="text">
+                        <input id="Password" type="text" placeholder="Repeat Password" required title="slaptažodžiai turi sutapti">
                     </div>
-                </form>    
-                <button>Sign up</button>
-                <p>You signing up. you agree to the <a href="#">Terms & Conditions.</a> </p>
+                    <div class="form-row">
+                        <button type="submit">Sign up</button>
+                    </div>
+                </form> 
+                <div class="end">   
+                <p>By signing up. you agree to the <a href="#">Terms & Conditions.</a> </p>
+                </div>
             </div>
         </div>
     </div>
